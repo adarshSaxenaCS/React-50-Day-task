@@ -1,0 +1,41 @@
+.img1
+{
+  
+  width: 1350px;
+  height: 800px;
+  transition: 1s;
+  margin: 30px 10px 10px 10px;
+  object-fit: cover;  
+  overflow: hidden;
+
+  
+
+}
+
+img
+{
+
+  border-radius: 10%;
+  width: 100px;
+  height: 800px;
+  transition: 1s;
+  margin: 30px 10px 10px 10px;
+  object-fit: cover; 
+  overflow: hidden;
+ 
+
+}
+
+.con
+{
+margin-top: 15px 0px 0px 0px;
+/* background-image: linear-gradient(#12C2E9 , #F64F59); */
+/* background-image: url("./image/bg-image1.jpg"); */
+
+}
+
+img:hover {
+  box-shadow: 0 0 10px 10px rgba(5, 77, 101, 0.5);
+  border-radius: 10%;
+  
+}

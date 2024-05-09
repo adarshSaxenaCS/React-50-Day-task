@@ -1,0 +1,138 @@
+*{
+    box-sizing: border-box;
+}
+.super_main_day3{
+    font-family: 'Lato', sans-serif;
+    background-color: #090707;
+    color: #222;
+    width: 100%;
+    overflow-x: hidden; 
+}
+.Main_container{
+    background-color: #fafafa;
+    transform-origin: top left;
+    transition: 0.5s linear;
+    width: 100vw;
+    min-height: 100vh;
+    padding: 50px;
+    position: relative;
+}
+.Main_container.show-nav{
+    transform: rotate(-20deg);
+}
+.Main_container.show-nav .triangle{
+    transform: rotate(-70deg);
+}
+.Main_container.show-nav + nav li{
+    transform: translateX(0);
+    transition-delay: 0.3s;
+}
+.triangle-container{
+    position: fixed;
+    top: -100px;
+    left: -100px;
+}
+.triangle{
+    background-color: #ff7979;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    transition: 0.5s linear;
+}
+.triangle button#close{
+    top: 60%;
+    transform: rotate(90deg);
+    transform-origin: top left;
+}
+.triangle button{
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 100px;
+    height: 100px;
+    background: transparent;
+    border: 0;
+    font-size: 26px;
+    color: #fff;
+}
+.triangle button#open{
+    left: 60%;
+}
+.content_day3{
+    max-width: 1000px;
+    margin: 50px auto;
+}
+.content_day3 h1{
+    margin: 0;
+    font-size: 35px;
+    font-weight: 550;
+}
+.content_day3 small{
+    color: #555;
+    font-style: italic;
+}
+
+.content_day3 p{
+    color: #333;
+    line-height: 1.5;
+    margin-top: 1rem;
+}
+
+.content_day3 img{
+    width: 100%;
+}
+
+.navbar_day3{
+    position: fixed;
+    bottom: 40px;
+    left: 0;
+    z-index: 100;
+}
+
+.navbar_day3 ul {
+    list-style-type: none;
+    padding-left: 30px;
+}
+
+.navbar_day3 ul li {
+    text-transform: uppercase;
+    color: #fff;
+    margin: 40px 0;
+    transform: translateX(-100%);
+    transition: 0.4s ease-in;
+}
+
+.navbar_day3 ul li i{
+    font-size: 20px;
+    margin-right: 10px;
+}
+
+/* .navbar_day3 ul li + li {
+    margin-left: 15px;
+  
+}
+
+.navbar_day3 ul li + li + li {
+    margin-left: 30px;
+} */
+
+.fa, .fas{
+    font-weight: 900;
+}
+.fa, .far, .fas{
+    font-family: "Font Awesome 5 Free";
+}
+.fa, .fab, .fad, .fal, .far, .fas{
+    display: inline-block;
+    font-style: normal;
+    font-variant: normal;
+    text-rendering: auto;
+    line-height: 1;
+}
+.fa-times::before{
+    content: "\f00d";
+}
+.fa-home::before{
+    content: "\f015";
+}

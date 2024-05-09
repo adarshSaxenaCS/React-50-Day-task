@@ -1,0 +1,34 @@
+.frame
+{
+    display: flex;
+    /* justify-content: center; */
+    align-items:center;
+    justify-content: center;
+    background: linear-gradient(#BFF098 ,#6FD6FF);
+    height: 690px;
+}
+.inputOpen
+{
+    height: 35px;
+    width: 250px;
+    /* border: none; */
+    /* box-shadow: 0 0 10px 0; */
+    transition: 0.7s all ease-in;
+    border-radius: 10px;
+}
+
+.inputClose
+{
+    height: 35px;
+    width: 47px;
+    /* box-shadow: 0 0 10px 0; */
+    border: #6FD6FF;
+    transition: 0.7s all ease-in;
+    background: transparent;
+}
+
+.icon
+{
+    margin-left: -36px;
+    margin-bottom: 5px;
+}

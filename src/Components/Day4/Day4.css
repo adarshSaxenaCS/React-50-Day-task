@@ -1,0 +1,59 @@
+img
+{
+   width: 1520px;
+   height: 678px;
+   z-index: 100;
+   /* transition: filter 16s ease; */
+   /* filter: blur(80px); */
+   animation: blurAnimation 10s ease forwards; 
+}
+
+.centered {
+    position: absolute;
+    color: #000;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: bold;
+    font-size: 40px;
+   
+}
+
+
+
+
+
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 100vh; /* Adjust height as needed */
+    overflow: hidden;
+}
+
+@keyframes blurAnimation {
+    0% {
+        filter: blur(100px); /* Start with no blur */
+    }
+    100% {
+        filter: blur(0px); /* Blur amount at the end of animation */
+    }
+}
+
+
+.spinning-element {
+    width: 100px;
+    height: 100px;
+    background-color: blue;
+    animation: spinAnimation 2s linear infinite; /* Apply the spinAnimation */
+}
+
+@keyframes spinAnimation {
+    0% {
+        transform: rotate(0deg); /* Start rotation at 0 degrees */
+    }
+    100% {
+        transform: rotate(100deg); /* End rotation at 100 degrees */
+    }
+}
